@@ -27,7 +27,7 @@ The **CCL Electronics** {% term integration %} is a local-only {% term integrati
     - Server IP: 192.168.1.154 (your Home Assistant IP address)
     - Port: 42373 (fixed)
     - Path: /54fa0b (random)
-3. Open the **WSLink** app in your mobile device.
+3. Open the WSLink app in your mobile device.
 4. Connect your mobile device to your weather station in AP mode.
 5. In the WSLink app, go to **Weather Server** → **Home Assistant**, and enter the Server IP, Port, and Path assigned by Home Assistant.
 6. Save
