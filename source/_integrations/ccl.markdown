@@ -3,7 +3,7 @@ title: CCL Electronics
 description: Instructions on how to integrate your CCL Electronics devices into Home Assistant.
 ha_category:
   - Sensor
-ha_release: 2025.1
+ha_release: 2025.2
 ha_iot_class: Local Push
 ha_config_flow: true
 ha_codeowners:
@@ -30,6 +30,14 @@ The **CCL Electronics** {% term integration %} is a local-only {% term integrati
 4. Connect your mobile device to your weather station in AP mode.
 5. In the WSLink app, go to **Weather Server** → **Home Assistant**, and enter the Server IP, Port, and Path assigned by Home Assistant.
 6. Save
+
+## Removing the integration
+
+This integration follows standard integration removal. No extra steps are required.
+
+{% include integrations/remove_device_service.md %}
+
+After deleting the integration, go to the app of the manufacturer and remove the Home Assistant integration from there as well.
 
 ## Sensors
 
