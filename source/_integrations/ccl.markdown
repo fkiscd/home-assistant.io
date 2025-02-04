@@ -22,14 +22,22 @@ The **CCL Electronics** {% term integration %} is a local-only {% term integrati
 
 1. In the **Settings** → **Devices & services**, click **Add integration** and select **CCL Electronics** from the pop-up menu.
 2. Follow the instructions and press **Submit** to generate the following details.  
-   For example:
-   - Server IP: '192.168.1.154' (example: use your Home Assistant IP address)
-   - Port: '8123' (constant)
-   - Path: '/webhook/api/54fa0b9c' (automatically generated)
+  For example:
+   - Server IP: '192.168.1.154'
+   - Port: '8123'
+   - Path: '/webhook/api/54fa0b9c'
 3. Open the **WSLink** app on your mobile device.
 4. Connect your mobile device to your weather station in AP mode.
 5. In the WSLink app, go to **Weather Server** → **Home Assistant**, and enter the Server IP, Port, and Path assigned by Home Assistant.
 6. Save
+  {% configuration_basic %}
+  Server IP:
+    description: "Your Home Assistant IP address."
+  Port:
+    description: "Your Home Assistant port number. Should always be '8123'."
+  Path:
+    description: "It includes a unique 8-digits passkey and can be occupied by the first device as an identifier."
+  {% endconfiguration_basic %}
 
 ## Removing the integration
 
